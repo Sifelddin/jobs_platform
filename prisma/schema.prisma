@@ -1,0 +1,57 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String   @unique
+  password  String   @db.VarChar(255)
+  createdAt DateTime @default(now())
+  role      Role     @default(USER)
+  posts     Notice[]
+}
+
+model Notice {
+  id           Int           @id @default(autoincrement())
+  employer     String
+  email        String        @db.VarChar(255)
+  offer        String        @db.VarChar(255)
+  contract     Contract
+  description  String        @db.Text
+  city         String        @db.VarChar(255)
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  User         User?         @relation(fields: [userId], references: [id])
+  userId       Int?
+  applications Application[]
+}
+
+model Application {
+  id        Int    @id @default(autoincrement())
+  firstName String
+  lastName  String
+  email     String
+  CVpath    String @db.VarChar(255)
+  Notice    Notice @relation(fields: [noticeId], references: [id])
+  noticeId  Int
+}
+
+enum Contract {
+  CDD
+  CDI
+  Stage
+}
+
+enum Role {
+  USER
+  ADMIN
+}
