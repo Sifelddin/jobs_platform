@@ -1,12 +1,13 @@
 const users = [
   {
-    name: 'tarek',
+    name: 'Doe',
     email: 'tarek@gmail.com',
-    password: '000000',
+    password: '111111',
   },
   {
-    name: 'ali',
+    name: 'Jhon',
     email: 'ali@gmail.com',
+    // password 000000
     password: '000000',
   },
 ];
@@ -16,37 +17,37 @@ const notices = [
     employer: 'ali tarek',
     email: 'ali@gmail.com',
     offer: 'web developper fullstack',
-    city: 'city',
+    city: 'Anaa - 98711',
     contract: 'CDD',
     description:
       '  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deleniti nemo dolores sed perferendis labore, fuga sit, ipsum nisi laudantium velit dolorum ea voluptatum est obcaecati! Earum deleniti sint necessitatibus?',
     userId: 1,
   },
   {
-    employer: 'ali tarek',
+    employer: 'tarek',
     email: 'ali@gmail.com',
     offer: 'web developper fullstack',
-    city: 'city1',
+    city: 'Manihi - 98727',
     contract: 'CDD',
     description:
       '  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deleniti nemo dolores sed perferendis labore, fuga sit, ipsum nisi laudantium velit dolorum ea voluptatum est obcaecati! Earum deleniti sint necessitatibus? - Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deleniti nemo dolores sed perferendis labore, fuga sit, ipsum nisi laudantium velit dolorum ea voluptatum est obcaecati! Earum deleniti sint necessitatibus?',
     userId: 2,
   },
   {
-    employer: 'ali tarek',
+    employer: 'ali',
     email: 'ali@gmail.com',
     offer: 'web developper fullstack',
-    city: 'city2',
+    city: 'Tureia - 98755',
     contract: 'CDI',
     description:
-      '  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deleniti nemo dolores sed perferendis labore, fuga sit, ipsum nisi laudantium velit dolorum ea voluptatum est obcaecati! Earum deleniti sint necessitatibus?',
+      '  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deleniti nemo dolores sed perferendis labore, fuga sit, ipsum nisi laudantium velit dolorum ea voluptatum est obcaecati! Earum deleniti sint necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deleniti nemo dolores sed perferendis labore, fuga sit, ipsum nisi laudantium velit dolorum ea voluptatum est obcaecati! Earum deleniti sint necessitatibus? ',
     userId: 1,
   },
   {
-    employer: 'ali tarek',
+    employer: 'ali',
     email: 'ali@gmail.com',
     offer: 'web developper fullstack',
-    city: 'city3',
+    city: 'Ua-pou - 98757',
     contract: 'CDI',
     description:
       '  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deleniti nemo dolores sed perferendis labore, fuga sit, ipsum nisi laudantium velit dolorum ea voluptatum est obcaecati! Earum deleniti sint necessitatibus?',
@@ -56,7 +57,7 @@ const notices = [
     employer: 'ali tarek',
     email: 'ali@gmail.com',
     offer: 'web developper fullstack',
-    city: 'city4',
+    city: 'Fatu-Hiva - 98718',
     contract: 'CDD',
     description:
       '  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deleniti nemo dolores sed perferendis labore, fuga sit, ipsum nisi laudantium velit dolorum ea voluptatum est obcaecati! Earum deleniti sint necessitatibus? - Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deleniti nemo dolores sed perferendis labore, fuga sit, ipsum nisi laudantium velit dolorum ea voluptatum est obcaecati! Earum deleniti sint necessitatibus?',

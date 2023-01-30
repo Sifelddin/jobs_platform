@@ -1,9 +1,16 @@
 const { PrismaClient } = require('@prisma/client');
 const { users, notices } = require('./data.js');
-
+const bcrypt = require('bcrypt');
 let prisma = new PrismaClient();
 const load = async () => {
   try {
+    for (let i = 0; i < users.length; i++) {
+      const user = users[i];
+      user.password = await bcrypt.hash(user.password, 10);
+    }
+
+    await prisma.application.deleteMany();
+    console.log('applications deleted');
     await prisma.notice.deleteMany();
     console.log('posts deleted');
 
@@ -12,7 +19,7 @@ const load = async () => {
 
     await prisma.$queryRaw`ALTER TABLE user AUTO_INCREMENT = 1`;
     await prisma.$queryRaw`ALTER TABLE notice AUTO_INCREMENT = 1`;
-
+    console.log(users);
     await prisma.user.createMany({
       data: users,
     });
