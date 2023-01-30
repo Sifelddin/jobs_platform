@@ -3,8 +3,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 
 install the dependencies for this project:
-
-run npm install
+ ```bash
+ npm install
+ ```
+it should add .env file, else you can create .env.local in the root directory.
 
 First, run the development server:
 
