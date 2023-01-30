@@ -6,7 +6,7 @@ install the dependencies for this project:
  ```bash
  npm install
  ```
-it should add .env file, else you can create .env.local in the root directory.
+it should add **.env** file, else you can create **.env.local** in the root directory.
 
 First, run the development server:
 
