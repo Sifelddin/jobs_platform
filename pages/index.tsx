@@ -52,7 +52,10 @@ const Home: NextPage<{ notices: Notice[]; notice: Notice }> = ({
               </div>
             )) || <Details notice={notice} setShowModal={setShowModal} />}
             {showMessage && (
-              <MessageModal setShowMessage={setShowMessage}>
+              <MessageModal
+                setShowMessage={setShowMessage}
+                showMessage={showMessage}
+              >
                 {' '}
                 application is sent !{' '}
               </MessageModal>

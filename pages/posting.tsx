@@ -57,6 +57,7 @@ const Posting = ({ cities }: { cities: City[] }) => {
     fetchData(`${process.env.NEXT_PUBLIC_HOST}/api/notices`, data, 'POST').then(
       () => {
         setShowMessage(true);
+        console.log('test');
       },
     );
   };
@@ -172,7 +173,7 @@ const Posting = ({ cities }: { cities: City[] }) => {
         </form>
       </div>
       {showMessage && (
-        <MessageModal setShowMessage={setShowMessage}>
+        <MessageModal setShowMessage={setShowMessage} showMessage={showMessage}>
           {' '}
           notice is added !{' '}
         </MessageModal>
