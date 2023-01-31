@@ -23,6 +23,8 @@ NEXTAUTH_SECRET="random value"
 
 ### seed
  ```bash
+ npx prisma migrate dev
+ 
  npm run seed
  ```
 
