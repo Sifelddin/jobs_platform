@@ -18,7 +18,7 @@ if you have docker install you can use docker-compose file to install **mysql** 
 
 docker-compose up 
 
-```bash
+```
 
 ### in .env file add variables :
 
@@ -33,7 +33,7 @@ by default : user : **root** - and password : **example**
  **then**
  
  npm run seed
- ```bash
+ ```
 
 ### run the development server:
 
