@@ -17,8 +17,8 @@ const load = async () => {
     await prisma.user.deleteMany();
     console.log('users deleted');
 
-    await prisma.$queryRaw`ALTER TABLE user AUTO_INCREMENT = 1`;
-    await prisma.$queryRaw`ALTER TABLE notice AUTO_INCREMENT = 1`;
+    await prisma.$queryRaw`ALTER TABLE User AUTO_INCREMENT = 1`;
+    await prisma.$queryRaw`ALTER TABLE Notice AUTO_INCREMENT = 1`;
     console.log(users);
     await prisma.user.createMany({
       data: users,
