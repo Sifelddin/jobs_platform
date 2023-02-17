@@ -10,23 +10,30 @@ install the dependencies for this project:
  ```
 it should add **.env** file, else you can create **.env.local** in the root directory.
 
-### in .env file add these variables :
+### install mysql database
 
-DATABASE_URL => database credentials
-exemple : "mysql://root:password@localhost:3306/jobs"
+if you have docker install you can use docker-compose file to install **mysql** and **phpmyadmin** containers using this command : 
 
-if you want to use database rather than mysql DB, you must change it also in **prisma/schema.prisma** file
+```bash
 
-NEXT_PUBLIC_HOST="http://localhost:3000" <br />
-NEXTAUTH_URL="http://localhost:3000/" <br />
-NEXTAUTH_SECRET="random value"
+docker-compose up 
+
+```bash
+
+### in .env file add variables :
+
+from the **env.example** file copy all the variables in **.env** file
+
+by default : user : **root** - and password : **example**
 
 ### seed
  ```bash
- npx prisma migrate dev
+ npx prisma db push
+ 
+ **then**
  
  npm run seed
- ```
+ ```bash
 
 ### run the development server:
 
