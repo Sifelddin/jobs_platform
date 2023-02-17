@@ -30,7 +30,7 @@ by default : user : **root** - and password : **example**
  ```bash
  npx prisma db push
  
- **then**
+ # then
  
  npm run seed
  ```
