@@ -12,7 +12,7 @@ it should add **.env** file, else you can create **.env.local** in the root dire
 
 ### install mysql database
 
-if you have docker install you can use docker-compose file to install **mysql** and **phpmyadmin** containers using this command : 
+if you have docker installed you can use docker-compose file to install **mysql** and **phpmyadmin** containers using this command : 
 
 ```bash
 
